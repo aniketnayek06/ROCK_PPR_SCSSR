@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rock-Paper-Scissors
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-center text-4xl mt-4 font-bold">Rock-Paper-Scissors</h1>
+    <div class="flex flex-row justify-center items-center gap-4 mt-16">
+        <button class="border-2 rounded-md px-6 py-8" onclick="playtheGAme('rock')">ROCK👊</button>
+        <button class="border-2 rounded-md px-6 py-8" onclick="playtheGAme('paper')">PAPER🖐</button>
+        <button class="border-2 rounded-md px-6 py-8" onclick="playtheGAme('scissors')">SCISSORS✌️</button>
+    </div>
+    <div id="playerDisplay" class="text-center text-2xl mt-16">PLAYER : </div>
+    <div id="computerDisplay" class="text-center text-2xl">COMPUTER : </div>
+    <div id="resultDisplay" class="text-center text-2xl mt-8"></div>
+
+    <div class="text-2xl text-center font-bold"> Player's Score : <span id="playerScoreDisplay"> 0 </span> </div>
+    <div class="text-2xl text-center font-bold"> Computer's Score : <span id="computerScoreDisplay"> 0 </span> </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
